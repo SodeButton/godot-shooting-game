@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 addons/
+=======
+>>>>>>> a0a658dd2c6377bd00b4b69a75be62b7b73e19aa
 .import/
 *.translation
 export_presets.cfg

@@ -22,3 +22,6 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x, 16, screen_size.x - 16)
 	position.y = clamp(position.y, 16, screen_size.y - 16)
+	
+	if Input.is_action_pressed("ui_accept"):
+		pass

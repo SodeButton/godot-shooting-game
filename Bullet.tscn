@@ -46,11 +46,11 @@ radius = 6.65336
 height = 15.6894
 
 [node name="Bullet" type="RigidBody2D"]
+collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 2 )
 __meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
+"_edit_group_": true
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]

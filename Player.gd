@@ -1,7 +1,11 @@
 extends Area2D
 
+export (PackedScene) var Bullet
+
 export var speed = 400
+
 var screen_size
+var shot_timer = 0
 
 func _ready():
 	screen_size = get_viewport_rect().size
@@ -24,4 +28,14 @@ func _process(delta):
 	position.y = clamp(position.y, 16, screen_size.y - 16)
 	
 	if Input.is_action_pressed("ui_accept"):
-		pass
+		if shot_timer <= 0:
+			shot_timer = 0.1
+			var bullet = Bullet.instance()
+			add_child(bullet)
+			bullet.position = position
+			print_debug("test")
+	
+	if shot_timer > 0:
+		shot_timer -= delta
+	
+	

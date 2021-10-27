@@ -4,32 +4,26 @@
 [ext_resource path="res://Bullet.gd" type="Script" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 10, 16 )
 
 [sub_resource type="AtlasTexture" id=2]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 10, 0, 10, 16 )
 
 [sub_resource type="AtlasTexture" id=3]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 20, 0, 10, 16 )
 
 [sub_resource type="AtlasTexture" id=4]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 30, 0, 10, 16 )
 
 [sub_resource type="AtlasTexture" id=5]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 40, 0, 10, 16 )
 
 [sub_resource type="AtlasTexture" id=6]
-flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 50, 0, 10, 16 )
 
@@ -42,10 +36,11 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=8]
-radius = 6.65336
-height = 15.6894
+radius = 3.56368
+height = 8.4178
 
 [node name="Bullet" type="RigidBody2D"]
+position = Vector2( 241.86, 427.786 )
 collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 2 )
@@ -54,8 +49,8 @@ __meta__ = {
 }
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -0.187439, -0.187424 )
 rotation = 3.14159
-scale = Vector2( 2, 2 )
 frames = SubResource( 7 )
 animation = "idle"
 frame = 5

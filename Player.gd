@@ -31,11 +31,10 @@ func _process(delta):
 		if shot_timer <= 0:
 			shot_timer = 0.1
 			var bullet = Bullet.instance()
-			add_child(bullet)
+			var main_node = get_parent()
+			main_node.add_child(bullet)
 			bullet.position = position
-			print_debug("test")
+
 	
 	if shot_timer > 0:
 		shot_timer -= delta
-	
-	
